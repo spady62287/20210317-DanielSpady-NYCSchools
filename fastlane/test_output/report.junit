@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites name='20210317-DanielSpady-NYCSchoolsUITests.xctest' tests='12' failures='0'>
   <testsuite name='_0210317_DanielSpady_NYCSchoolsTests.NYCSchoolsTests' tests='2' failures='0'>
-    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.NYCSchoolsTests' name='testExample' time='0.005'/>
-    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.NYCSchoolsTests' name='testPerformanceExample' time='0.324'/>
+    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.NYCSchoolsTests' name='testExample' time='0.018'/>
+    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.NYCSchoolsTests' name='testPerformanceExample' time='0.361'/>
   </testsuite>
   <testsuite name='_0210317_DanielSpady_NYCSchoolsTests.ResturauntNetworkTests' tests='4' failures='0'>
-    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.ResturauntNetworkTests' name='testErrorNetworkCall' time='0.022'/>
-    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.ResturauntNetworkTests' name='testJSONDataInTheSchoolList' time='0.554'/>
-    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.ResturauntNetworkTests' name='testResponseIsNotNil' time='0.501'/>
-    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.ResturauntNetworkTests' name='testSchoolListCount' time='0.434'/>
+    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.ResturauntNetworkTests' name='testErrorNetworkCall' time='0.007'/>
+    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.ResturauntNetworkTests' name='testJSONDataInTheSchoolList' time='1.374'/>
+    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.ResturauntNetworkTests' name='testResponseIsNotNil' time='0.552'/>
+    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.ResturauntNetworkTests' name='testSchoolListCount' time='0.472'/>
   </testsuite>
   <testsuite name='_0210317_DanielSpady_NYCSchoolsTests.SATListNetworkTests' tests='4' failures='0'>
     <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.SATListNetworkTests' name='testErrorNetworkCall' time='0.004'/>
     <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.SATListNetworkTests' name='testJSONDataInTheSATList' time='0.008'/>
-    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.SATListNetworkTests' name='testSATListCount' time='0.007'/>
+    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.SATListNetworkTests' name='testSATListCount' time='0.006'/>
     <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.SATListNetworkTests' name='testSATResponseIsNotNil' time='0.015'/>
   </testsuite>
   <testsuite name='_0210317_DanielSpady_NYCSchoolsUITests.NYCSchoolsUITests' tests='2' failures='0'>
-    <testcase classname='_0210317_DanielSpady_NYCSchoolsUITests.NYCSchoolsUITests' name='testExample' time='1.807'/>
-    <testcase classname='_0210317_DanielSpady_NYCSchoolsUITests.NYCSchoolsUITests' name='testLaunchPerformance' time='15.993'/>
+    <testcase classname='_0210317_DanielSpady_NYCSchoolsUITests.NYCSchoolsUITests' name='testExample' time='1.903'/>
+    <testcase classname='_0210317_DanielSpady_NYCSchoolsUITests.NYCSchoolsUITests' name='testLaunchPerformance' time='16.577'/>
   </testsuite>
 </testsuites>
