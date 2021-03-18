@@ -15,6 +15,7 @@
 		99D8556F2602DB0A007E7207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99D8556D2602DB0A007E7207 /* LaunchScreen.storyboard */; };
 		99D8557A2602DB0A007E7207 /* _0210317_DanielSpady_NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D855792602DB0A007E7207 /* _0210317_DanielSpady_NYCSchoolsTests.swift */; };
 		99D855852602DB0A007E7207 /* _0210317_DanielSpady_NYCSchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D855842602DB0A007E7207 /* _0210317_DanielSpady_NYCSchoolsUITests.swift */; };
+		99D8559C2602DF13007E7207 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 99D8559B2602DF13007E7207 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		99D855802602DB0A007E7207 /* 20210317-DanielSpady-NYCSchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20210317-DanielSpady-NYCSchoolsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D855842602DB0A007E7207 /* _0210317_DanielSpady_NYCSchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0210317_DanielSpady_NYCSchoolsUITests.swift; sourceTree = "<group>"; };
 		99D855862602DB0A007E7207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99D8559B2602DF13007E7207 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		99D855562602DB07007E7207 = {
 			isa = PBXGroup;
 			children = (
+				99D8559B2602DF13007E7207 /* .swiftlint.yml */,
 				99D855612602DB08007E7207 /* 20210317-DanielSpady-NYCSchools */,
 				99D855782602DB0A007E7207 /* 20210317-DanielSpady-NYCSchoolsTests */,
 				99D855832602DB0A007E7207 /* 20210317-DanielSpady-NYCSchoolsUITests */,
@@ -138,6 +141,7 @@
 				99D8555B2602DB08007E7207 /* Sources */,
 				99D8555C2602DB08007E7207 /* Frameworks */,
 				99D8555D2602DB08007E7207 /* Resources */,
+				99D855A02602DF77007E7207 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -231,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99D8559C2602DF13007E7207 /* .swiftlint.yml in Resources */,
 				99D8556F2602DB0A007E7207 /* LaunchScreen.storyboard in Resources */,
 				99D8556C2602DB0A007E7207 /* Assets.xcassets in Resources */,
 				99D8556A2602DB08007E7207 /* Main.storyboard in Resources */,
@@ -252,6 +257,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99D855A02602DF77007E7207 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99D8555B2602DB08007E7207 /* Sources */ = {
