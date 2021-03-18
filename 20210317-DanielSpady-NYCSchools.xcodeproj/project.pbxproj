@@ -29,6 +29,10 @@
 		99D856042602F945007E7207 /* SchoolResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D856032602F945007E7207 /* SchoolResponse.swift */; };
 		99D8560A2602F9FE007E7207 /* SchoolUtillity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D856092602F9FE007E7207 /* SchoolUtillity.swift */; };
 		99D856122602FBA0007E7207 /* SchoolListNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D856112602FBA0007E7207 /* SchoolListNetworkTests.swift */; };
+		99D8562126030712007E7207 /* SATResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D8562026030712007E7207 /* SATResult.swift */; };
+		99D856292603073B007E7207 /* SATRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D856282603073B007E7207 /* SATRequest.swift */; };
+		99D8563126030748007E7207 /* SATResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D8563026030748007E7207 /* SATResponse.swift */; };
+		99D85636260309D8007E7207 /* SATListNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D85635260309D8007E7207 /* SATListNetworkTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,10 @@
 		99D856032602F945007E7207 /* SchoolResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolResponse.swift; sourceTree = "<group>"; };
 		99D856092602F9FE007E7207 /* SchoolUtillity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolUtillity.swift; sourceTree = "<group>"; };
 		99D856112602FBA0007E7207 /* SchoolListNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListNetworkTests.swift; sourceTree = "<group>"; };
+		99D8562026030712007E7207 /* SATResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATResult.swift; sourceTree = "<group>"; };
+		99D856282603073B007E7207 /* SATRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATRequest.swift; sourceTree = "<group>"; };
+		99D8563026030748007E7207 /* SATResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATResponse.swift; sourceTree = "<group>"; };
+		99D85635260309D8007E7207 /* SATListNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATListNetworkTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +153,7 @@
 				99D855792602DB0A007E7207 /* _0210317_DanielSpady_NYCSchoolsTests.swift */,
 				99D8557B2602DB0A007E7207 /* Info.plist */,
 				99D856112602FBA0007E7207 /* SchoolListNetworkTests.swift */,
+				99D85635260309D8007E7207 /* SATListNetworkTests.swift */,
 			);
 			path = "20210317-DanielSpady-NYCSchoolsTests";
 			sourceTree = "<group>";
@@ -191,9 +200,8 @@
 		99D855B62602E377007E7207 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				99D855F42602ECC9007E7207 /* SchoolResult.swift */,
-				99D856022602F92D007E7207 /* Response */,
-				99D855F92602F8FE007E7207 /* Request */,
+				99D8561D260306E0007E7207 /* SATs */,
+				99D8561C260306CE007E7207 /* Schools */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -272,6 +280,42 @@
 				99D856092602F9FE007E7207 /* SchoolUtillity.swift */,
 			);
 			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		99D8561C260306CE007E7207 /* Schools */ = {
+			isa = PBXGroup;
+			children = (
+				99D855F42602ECC9007E7207 /* SchoolResult.swift */,
+				99D856022602F92D007E7207 /* Response */,
+				99D855F92602F8FE007E7207 /* Request */,
+			);
+			path = Schools;
+			sourceTree = "<group>";
+		};
+		99D8561D260306E0007E7207 /* SATs */ = {
+			isa = PBXGroup;
+			children = (
+				99D8562026030712007E7207 /* SATResult.swift */,
+				99D8561F260306FB007E7207 /* Request */,
+				99D8561E260306F3007E7207 /* Response */,
+			);
+			path = SATs;
+			sourceTree = "<group>";
+		};
+		99D8561E260306F3007E7207 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				99D8563026030748007E7207 /* SATResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		99D8561F260306FB007E7207 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				99D856282603073B007E7207 /* SATRequest.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,8 +450,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				99D855FB2602F918007E7207 /* SchoolRequest.swift in Sources */,
+				99D856292603073B007E7207 /* SATRequest.swift in Sources */,
+				99D8562126030712007E7207 /* SATResult.swift in Sources */,
 				99D855BB2602E3FD007E7207 /* BaseRequest.swift in Sources */,
 				99D855DD2602E8F5007E7207 /* AppConstants.swift in Sources */,
+				99D8563126030748007E7207 /* SATResponse.swift in Sources */,
 				99D855D52602E8A3007E7207 /* AnimatedLoader.swift in Sources */,
 				99D855E22602E9A2007E7207 /* BaseCodable.swift in Sources */,
 				99D855672602DB08007E7207 /* ViewController.swift in Sources */,
@@ -429,6 +476,7 @@
 			files = (
 				99D856122602FBA0007E7207 /* SchoolListNetworkTests.swift in Sources */,
 				99D8557A2602DB0A007E7207 /* _0210317_DanielSpady_NYCSchoolsTests.swift in Sources */,
+				99D85636260309D8007E7207 /* SATListNetworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

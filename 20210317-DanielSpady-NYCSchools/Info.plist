@@ -5,7 +5,7 @@
 	<key>SchoolListUrl</key>
 	<string>https://data.cityofnewyork.us/resource/s3k6-pzi2.json</string>
 	<key>SATListUrl</key>
-	<string>https://data.cityofnewyork.us/Education/SAT-Results/f9bf-2cp4</string>
+	<string>https://data.cityofnewyork.us/resource/f9bf-2cp4.json</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
