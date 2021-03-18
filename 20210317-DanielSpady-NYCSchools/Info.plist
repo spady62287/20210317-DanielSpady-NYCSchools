@@ -2,10 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>SchoolListUrl</key>
-    <string>https://data.cityofnewyork.us/Education/DOE-High-School-Directory-2017/s3k6-pzi2</string>
-    <key>SATListUrl</key>
-    <string>https://data.cityofnewyork.us/Education/SAT-Results/f9bf-2cp4</string>
+	<key>SchoolListUrl</key>
+	<string>https://data.cityofnewyork.us/resource/s3k6-pzi2.json</string>
+	<key>SATListUrl</key>
+	<string>https://data.cityofnewyork.us/Education/SAT-Results/f9bf-2cp4</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -66,10 +66,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>NSAppTransportSecurity</key>
-    <dict>
-        <key>NSAllowsArbitraryLoads</key>
-        <true/>
-    </dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
