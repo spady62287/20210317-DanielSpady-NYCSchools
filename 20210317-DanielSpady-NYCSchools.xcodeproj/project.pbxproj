@@ -24,6 +24,11 @@
 		99D855DD2602E8F5007E7207 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D855DC2602E8F5007E7207 /* AppConstants.swift */; };
 		99D855E22602E9A2007E7207 /* BaseCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D855E12602E9A2007E7207 /* BaseCodable.swift */; };
 		99D855E72602E9CA007E7207 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D855E62602E9CA007E7207 /* BaseResponse.swift */; };
+		99D855F52602ECC9007E7207 /* SchoolResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D855F42602ECC9007E7207 /* SchoolResult.swift */; };
+		99D855FB2602F918007E7207 /* SchoolRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D855FA2602F918007E7207 /* SchoolRequest.swift */; };
+		99D856042602F945007E7207 /* SchoolResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D856032602F945007E7207 /* SchoolResponse.swift */; };
+		99D8560A2602F9FE007E7207 /* SchoolUtillity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D856092602F9FE007E7207 /* SchoolUtillity.swift */; };
+		99D856122602FBA0007E7207 /* SchoolListNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D856112602FBA0007E7207 /* SchoolListNetworkTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,11 @@
 		99D855DC2602E8F5007E7207 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		99D855E12602E9A2007E7207 /* BaseCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCodable.swift; sourceTree = "<group>"; };
 		99D855E62602E9CA007E7207 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		99D855F42602ECC9007E7207 /* SchoolResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolResult.swift; sourceTree = "<group>"; };
+		99D855FA2602F918007E7207 /* SchoolRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolRequest.swift; sourceTree = "<group>"; };
+		99D856032602F945007E7207 /* SchoolResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolResponse.swift; sourceTree = "<group>"; };
+		99D856092602F9FE007E7207 /* SchoolUtillity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolUtillity.swift; sourceTree = "<group>"; };
+		99D856112602FBA0007E7207 /* SchoolListNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListNetworkTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +144,7 @@
 			children = (
 				99D855792602DB0A007E7207 /* _0210317_DanielSpady_NYCSchoolsTests.swift */,
 				99D8557B2602DB0A007E7207 /* Info.plist */,
+				99D856112602FBA0007E7207 /* SchoolListNetworkTests.swift */,
 			);
 			path = "20210317-DanielSpady-NYCSchoolsTests";
 			sourceTree = "<group>";
@@ -169,6 +180,7 @@
 		99D855B52602E36B007E7207 /* SchoolList */ = {
 			isa = PBXGroup;
 			children = (
+				99D856082602F9E1007E7207 /* BusinessLogic */,
 				99D855B62602E377007E7207 /* Model */,
 				99D855B72602E37E007E7207 /* View */,
 				99D855B82602E38C007E7207 /* Controller */,
@@ -179,6 +191,9 @@
 		99D855B62602E377007E7207 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				99D855F42602ECC9007E7207 /* SchoolResult.swift */,
+				99D856022602F92D007E7207 /* Response */,
+				99D855F92602F8FE007E7207 /* Request */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -233,6 +248,30 @@
 				99D855DC2602E8F5007E7207 /* AppConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		99D855F92602F8FE007E7207 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				99D855FA2602F918007E7207 /* SchoolRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		99D856022602F92D007E7207 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				99D856032602F945007E7207 /* SchoolResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		99D856082602F9E1007E7207 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				99D856092602F9FE007E7207 /* SchoolUtillity.swift */,
+			);
+			path = BusinessLogic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99D855FB2602F918007E7207 /* SchoolRequest.swift in Sources */,
 				99D855BB2602E3FD007E7207 /* BaseRequest.swift in Sources */,
 				99D855DD2602E8F5007E7207 /* AppConstants.swift in Sources */,
 				99D855D52602E8A3007E7207 /* AnimatedLoader.swift in Sources */,
@@ -374,9 +414,12 @@
 				99D855C82602E765007E7207 /* BaseNavigator.swift in Sources */,
 				99D855632602DB08007E7207 /* AppDelegate.swift in Sources */,
 				99D855C32602E4C8007E7207 /* BaseService.swift in Sources */,
+				99D855F52602ECC9007E7207 /* SchoolResult.swift in Sources */,
 				99D855CD2602E7D8007E7207 /* BaseViewController.swift in Sources */,
 				99D855E72602E9CA007E7207 /* BaseResponse.swift in Sources */,
+				99D856042602F945007E7207 /* SchoolResponse.swift in Sources */,
 				99D855652602DB08007E7207 /* SceneDelegate.swift in Sources */,
+				99D8560A2602F9FE007E7207 /* SchoolUtillity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99D856122602FBA0007E7207 /* SchoolListNetworkTests.swift in Sources */,
 				99D8557A2602DB0A007E7207 /* _0210317_DanielSpady_NYCSchoolsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

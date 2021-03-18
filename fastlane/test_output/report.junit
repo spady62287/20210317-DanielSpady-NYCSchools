@@ -1,11 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='20210317-DanielSpady-NYCSchoolsTests.xctest' tests='4' failures='0'>
-  <testsuite name='_0210317_DanielSpady_NYCSchoolsUITests.NYCSchoolsUITests' tests='2' failures='0'>
-    <testcase classname='_0210317_DanielSpady_NYCSchoolsUITests.NYCSchoolsUITests' name='testExample' time='2.348'/>
-    <testcase classname='_0210317_DanielSpady_NYCSchoolsUITests.NYCSchoolsUITests' name='testLaunchPerformance' time='15.964'/>
-  </testsuite>
+<testsuites name='20210317-DanielSpady-NYCSchoolsUITests.xctest' tests='8' failures='0'>
   <testsuite name='_0210317_DanielSpady_NYCSchoolsTests.NYCSchoolsTests' tests='2' failures='0'>
-    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.NYCSchoolsTests' name='testExample' time='0.008'/>
-    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.NYCSchoolsTests' name='testPerformanceExample' time='0.453'/>
+    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.NYCSchoolsTests' name='testExample' time='0.002'/>
+    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.NYCSchoolsTests' name='testPerformanceExample' time='0.330'/>
+  </testsuite>
+  <testsuite name='_0210317_DanielSpady_NYCSchoolsTests.ResturauntNetworkTests' tests='4' failures='0'>
+    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.ResturauntNetworkTests' name='testErrorNetworkCall' time='0.024'/>
+    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.ResturauntNetworkTests' name='testJSONDataInTheSchoolList' time='0.592'/>
+    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.ResturauntNetworkTests' name='testResponseIsNotNil' time='0.530'/>
+    <testcase classname='_0210317_DanielSpady_NYCSchoolsTests.ResturauntNetworkTests' name='testSchoolListCount' time='0.433'/>
+  </testsuite>
+  <testsuite name='_0210317_DanielSpady_NYCSchoolsUITests.NYCSchoolsUITests' tests='2' failures='0'>
+    <testcase classname='_0210317_DanielSpady_NYCSchoolsUITests.NYCSchoolsUITests' name='testExample' time='1.890'/>
+    <testcase classname='_0210317_DanielSpady_NYCSchoolsUITests.NYCSchoolsUITests' name='testLaunchPerformance' time='16.199'/>
   </testsuite>
 </testsuites>
