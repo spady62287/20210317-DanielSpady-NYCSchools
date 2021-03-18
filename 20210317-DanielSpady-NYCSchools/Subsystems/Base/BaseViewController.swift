@@ -11,6 +11,7 @@ import UIKit
 class BaseViewController: UIViewController, BaseNavigator {
     
     var schoolList: [SchoolResult]?
+    var satList: [SATResult]?
         
     lazy var loadingView: UIView = { [unowned self] in
         let view = UIView(frame: self.view.bounds)
@@ -34,19 +35,29 @@ class BaseViewController: UIViewController, BaseNavigator {
     func loadData(for tableView: UITableView, errorView: UIView) {
         hideErrorView(with: errorView)
         showLoadingView(animated: true, after: 3.0)
-                
-        SchoolUtillity.schoolList(SchoolRequest()) { response in
+        
+        SchoolUtillity.satList(SATRequest()) { response in
+            
             if let result = response.result {
-                self.hideLoadingView()
-                self.schoolList = result
-                tableView.reloadData()
+                self.satList = result
             } else if let error = response.error {
-                self.hideLoadingView()
                 self.showErrorView(with: errorView)
                 dump(error)
             }
+            
+            SchoolUtillity.schoolList(SchoolRequest()) { response in
+                self.showLoadingView(animated: true, after: 3.0)
+                if let result = response.result {
+                    self.hideLoadingView()
+                    self.schoolList = result
+                    tableView.reloadData()
+                } else if let error = response.error {
+                    self.hideLoadingView()
+                    self.showErrorView(with: errorView)
+                    dump(error)
+                }
+            }
         }
-
     }
     
     func showErrorView(animated: Bool = true, after delay: TimeInterval? = nil, with errorView: UIView) {
