@@ -12,6 +12,10 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var errorView: UIStackView!
     
+    // MARK: - Properties
+    var selectedSchool: SchoolResult?
+    var selectedSAT: SATResult?
+    
     // MARK: - Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,4 +47,44 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let schools = schoolList {
+            self.selectedSchool = schools[(indexPath as NSIndexPath).row]
+        }
+        
+        // MAke sure Sat list is populated
+        guard let SATs = satList else {
+            return
+        }
+        
+        if let identifier = selectedSchool?.identifier {
+            let index = find(value: identifier, in: SATs)
+            
+            if let index = index {
+                self.selectedSAT = SATs[index]
+                
+                SchoolNavigator.shared().schoolDetailsViewController(viewController: self)
+            }
+        }
+    }
+    
+    func find(value searchValue: String, in array: [SATResult]) -> Int? {
+        for (index, value) in array.enumerated() {
+            if value.identifier == searchValue {
+                return index
+            }
+        }
+
+        return nil
+    }
+    
+    // MARK: - Base Navigator Delegate
+    func navigatorWillTransitionToViewController(destinationViewController: UIViewController) {
+        if destinationViewController.isKind(of: ViewControllerDetails.self) {
+            (destinationViewController as? ViewControllerDetails)?.selectedSAT = self.selectedSAT
+        }
+    }
+
 }
