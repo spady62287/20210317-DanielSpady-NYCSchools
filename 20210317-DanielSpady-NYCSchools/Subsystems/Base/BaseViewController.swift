@@ -37,24 +37,33 @@ class BaseViewController: UIViewController, BaseNavigator {
         showLoadingView(animated: true, after: 3.0)
         
         SchoolUtillity.satList(SATRequest()) { response in
-            
-            if let result = response.result {
-                self.satList = result
-            } else if let error = response.error {
-                self.showErrorView(with: errorView)
-                dump(error)
+            DispatchQueue.main.async {
+                if response.result == nil {
+                    self.hideLoadingView()
+                    self.showErrorView(with: errorView)
+                } else if let result = response.result {
+                    self.satList = result
+                } else if let error = response.error {
+                    self.showErrorView(with: errorView)
+                    dump(error)
+                }
             }
             
             SchoolUtillity.schoolList(SchoolRequest()) { response in
-                self.showLoadingView(animated: true, after: 3.0)
-                if let result = response.result {
-                    self.hideLoadingView()
-                    self.schoolList = result
-                    tableView.reloadData()
-                } else if let error = response.error {
-                    self.hideLoadingView()
-                    self.showErrorView(with: errorView)
-                    dump(error)
+                
+                DispatchQueue.main.async {
+                    if response.result == nil {
+                        self.hideLoadingView()
+                        self.showErrorView(with: errorView)
+                    } else if let result = response.result {
+                        self.hideLoadingView()
+                        self.schoolList = result
+                        tableView.reloadData()
+                    } else if let error = response.error {
+                        self.hideLoadingView()
+                        self.showErrorView(with: errorView)
+                        dump(error)
+                    }
                 }
             }
         }
